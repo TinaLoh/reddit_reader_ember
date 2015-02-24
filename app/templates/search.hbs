@@ -1,0 +1,6 @@
+<h1>Search Results</h1>
+
+{{#each post in model}}
+{{log post}}
+<li><strong>{{post.data.score}}</strong> -- {{post.data.title}}</li>
+{{/each}}

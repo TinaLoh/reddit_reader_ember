@@ -1,3 +1,12 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
+{{link-to "Soccer" "posts" "soccer"}} | {{link-to "Artisan Videos" "posts" "artisanvideos"}} | {{link-to "Favorites" "favorites"}}
+
+<br>
+{{input value=search  placeholder="Search Posts"}}
+<button {{action 'search'}}> GO </button>
+<br>
+
+<label >Search Subreddits</label>
+{{input type='checkbox' checked=searchSubreddits}}
 {{outlet}}

@@ -1,0 +1,13 @@
+<h1>Posts Route
+
+<button {{action 'changeSort'}}> &#9650;</button>
+
+<button {{action 'changeSort'}}> &#9660;</button>
+
+
+</h1>
+
+{{#each post in controller}}
+{{log post}}
+<li><strong>{{post.data.score}}</strong> -- {{post.data.title}}<span {{action 'addFavorite' post}}> &hearts;</span></li>
+{{/each}}
